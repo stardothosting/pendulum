@@ -9,7 +9,7 @@ Pendulum is framework agnostic, meaning it will work with any PHP 7 codebase, bu
 
 ### Installation 
 
-    composer require bytepath/pendulum
+    composer require stardothosting/pendulum
     
 The library should be automatically installed via the Laravel package auto-discovery feature. 
 
