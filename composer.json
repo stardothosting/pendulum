@@ -3,7 +3,7 @@
     "description": "A framework agnostic library for importing data into your PHP applications",
     "type": "library",
     "require": {
-        "mockery/mockery": "1.2.*"
+        "mockery/mockery": "1.3.*"
     },
     "require-dev": {
     	"orchestra/testbench": "^3.6",
