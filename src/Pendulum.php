@@ -108,7 +108,7 @@ class Pendulum
                 }
 
                 // Check if this class is the repository
-                if (array_key_exists(\Iterator::class, $implements)) {
+                if (array_key_exists(\IteratorAggregate::class, $implements)) {
                     $this->repository = $theObject;
                 }
 
