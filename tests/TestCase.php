@@ -33,6 +33,7 @@ class TestCase extends OrchestraTestCase
 
     public function assertIsCollection($item)
     {
+        $this->assertNotNull($item, 'Item should not be null');
         $this->assertTrue((bool)((get_class($item) == Collection::class) | (get_class($item) == DBCollection::class)));
     }
 
@@ -55,6 +56,7 @@ class TestCase extends OrchestraTestCase
      */
     protected function assertIsClass($class, $item)
     {
+        $this->assertNotNull($item, 'Item should not be null');
         $this->assertEquals($class, get_class($item));
     }
 
@@ -65,6 +67,8 @@ class TestCase extends OrchestraTestCase
      */
     protected function assertSameClass($a,$b)
     {
+        $this->assertNotNull($a, 'First item should not be null');
+        $this->assertNotNull($b, 'Second item should not be null');
         $this->assertEquals(get_class($a), get_class($b));
     }
 }

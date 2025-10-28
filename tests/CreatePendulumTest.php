@@ -93,29 +93,44 @@ class CreatePendulumTest extends \Bytepath\Pendulum\Tests\TestCase
 class ImplementsBothContracts implements ImporterContract, Iterator
 {
      public function processItem(&$item){}
+     #[\ReturnTypeWillChange]
      public function current(){}
+     #[\ReturnTypeWillChange]
      public function key(){}
+     #[\ReturnTypeWillChange]
      public function next (){}
+     #[\ReturnTypeWillChange]
      public function rewind (){}
+     #[\ReturnTypeWillChange]
      public function valid (){}
 }
 
 class ImplementsIterator implements Iterator
 {
+    #[\ReturnTypeWillChange]
     public function current(){}
+    #[\ReturnTypeWillChange]
     public function key(){}
+    #[\ReturnTypeWillChange]
     public function next (){}
+    #[\ReturnTypeWillChange]
     public function rewind (){}
+    #[\ReturnTypeWillChange]
     public function valid (){}
 }
 
 
 class AlternateIterator implements Iterator
 {
+    #[\ReturnTypeWillChange]
     public function current(){}
+    #[\ReturnTypeWillChange]
     public function key(){}
+    #[\ReturnTypeWillChange]
     public function next (){}
+    #[\ReturnTypeWillChange]
     public function rewind (){}
+    #[\ReturnTypeWillChange]
     public function valid (){}
 }
 
@@ -145,10 +160,15 @@ class WriterRepository implements OutputContract, Iterator
     public function failure($message){}
     public function importStarted(){}
     public function importComplete(){}
+    #[\ReturnTypeWillChange]
     public function current(){}
+    #[\ReturnTypeWillChange]
     public function key(){}
+    #[\ReturnTypeWillChange]
     public function next (){}
+    #[\ReturnTypeWillChange]
     public function rewind (){}
+    #[\ReturnTypeWillChange]
     public function valid (){}
 }
 
@@ -170,9 +190,14 @@ class WriterImporterRepository implements OutputContract, ImporterContract, Iter
     public function importStarted(){}
     public function processItem(&$item){}
     public function importComplete(){}
+    #[\ReturnTypeWillChange]
     public function current(){}
+    #[\ReturnTypeWillChange]
     public function key(){}
+    #[\ReturnTypeWillChange]
     public function next (){}
+    #[\ReturnTypeWillChange]
     public function rewind (){}
+    #[\ReturnTypeWillChange]
     public function valid (){}
 }

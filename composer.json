@@ -2,12 +2,14 @@
     "name": "stardothosting/pendulum",
     "description": "A framework agnostic library for importing data into your PHP applications",
     "type": "library",
+    "version": "2.0.0",
     "require": {
-        "mockery/mockery": "1.3.*"
+        "php": "^7.4|^8.0",
+        "mockery/mockery": "^1.4.4"
     },
     "require-dev": {
-    	"orchestra/testbench": "^3.6",
-        "phpunit/phpunit": "^7.0"
+    	"orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.5"
     },	
     "license": "mit",
     "autoload": {
